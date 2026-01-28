@@ -1,1 +1,40 @@
-queue: []
+queue:
+  - id: cmd_001
+    timestamp: "2026-01-28T22:21:21"
+    command: "Google Mapマーカークリック時にgeohash7桁範囲を表示する機能を実装せよ"
+    project: lidar-b5g-experiment
+    project_path: "~/Projects/Gaiax/proj/lidar-b5g-experiment/lidar_pay"
+    priority: high
+    status: approved
+    details: |
+      ## 機能要件
+      1. Google Mapに表示されているマーカーをクリック
+      2. 以下のいずれかの挙動：
+         - 地図がズームアップしてマーカーを中心に表示
+         - または、ポップアップでマーカーを中心とした地図を表示
+      3. マーカーを中心としたgeohash 7桁の範囲を可視化して表示
+
+      ## 作業手順
+      1. まずプロジェクト構成を調査（README、CLAUDE.md、既存の地図実装を確認）
+      2. 現在のマーカー実装を把握
+      3. geohash 7桁範囲の計算・表示方法を設計
+      4. 実装計画を立て、dashboard.mdに報告
+      5. 殿の承認を得てから実装開始
+
+  - id: cmd_002
+    timestamp: "2026-01-28T22:26:59"
+    command: "案Aで実装を進めよ"
+    project: lidar-b5g-experiment
+    priority: high
+    status: pending
+    details: |
+      ## 殿の決定
+      案A（ズームアップ方式）を採用する。
+
+      ## 実装方針
+      - マーカークリック時に地図をズームアップ
+      - マーカーを中心に移動
+      - geohash 7桁範囲を矩形で表示
+
+      ## 指示
+      実装を開始せよ。
