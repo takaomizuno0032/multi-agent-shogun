@@ -1,0 +1,10 @@
+# 足軽2専用質問ファイル
+question:
+  task_id: null          # 関連するタスクID
+  timestamp: null        # 質問日時
+  status: idle           # idle | pending | answered
+  content: null          # 質問内容
+  context: null          # 背景・状況説明
+  options: []            # 考えている選択肢（あれば）
+  answer: null           # 家老からの回答
+  answered_at: null      # 回答日時
